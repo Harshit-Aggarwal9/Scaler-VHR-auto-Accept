@@ -45,3 +45,6 @@ The extension is now loaded and ready to use.
 7. If there is any new VHR, your computer will play a sound.
 8. If you checked the **Accept VHR** option, the extension will also automatically accept the VHR.
 9. If you want to stop the extension, click on **Stop** button
+
+## What it looks like
+![image](https://github.com/user-attachments/assets/fb4fcf67-fac2-4b20-9556-4935a2428a2a)
