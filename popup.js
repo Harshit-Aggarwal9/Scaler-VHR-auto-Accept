@@ -15,3 +15,15 @@ document.getElementById('stopRefresh').addEventListener('click', () => {
     chrome.runtime.sendMessage({ command: 'stop', tabId: tabs[0].id });
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const checkbox = document.getElementById('acceptRequestCheckbox');
+
+  chrome.storage.sync.get('acceptRequest', (data) => {
+      checkbox.checked = data.acceptRequest || false;
+  });
+
+  checkbox.addEventListener('change', function () {
+      chrome.storage.sync.set({ acceptRequest: checkbox.checked });
+  });
+});
